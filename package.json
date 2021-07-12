@@ -1,0 +1,42 @@
+{
+  "name": "puzzlejs-jigsaw",
+  "version": "0.1.0",
+  "description": "A simple image puzzle",
+  "license": "MIT",
+  "main": "dist/jigsaw.min.js",
+  "module": "lib/index.js",
+  "files": [
+    "dist",
+    "lib",
+    "preview.png"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mitscherlich/puzzlejs-jigsaw.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mitscherlich/puzzlejs-jigsaw/issues"
+  },
+  "homepage": "https://www.npmjs.com/package/puzzlejs-jigsaw",
+  "author": "Mitscherlich <mitscherlich36@gmail.com>",
+  "scripts": {
+    "dev": "parcel example/index.html -d example/dist",
+    "watch": "npm run build -- -w",
+    "build": "rollup --config rollup.config.js",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "autoprefixer": "^10.3.0",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.3.5",
+    "postcss-url": "^10.1.3",
+    "rollup": "^2.53.1",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
