@@ -110,7 +110,7 @@ export class Jigsaw {
     text.innerHTML = '向右滑动滑块填充拼图';
     text.className = 'slider-text';
 
-    const el = this.el.get(0);
+    const el = this.el;
     el.classList.add('puzzle-jigsaw');
     el.appendChild(canvas);
     el.appendChild(refreshIcon);
