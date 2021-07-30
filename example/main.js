@@ -1,4 +1,5 @@
-import jigsaw from '../src';
+import jigsaw from 'puzzlejs-jigsaw';
+import 'puzzlejs-jigsaw/dist/jigsaw.css';
 
 jigsaw.init(
   '#jigsaw',
