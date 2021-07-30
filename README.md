@@ -17,10 +17,11 @@ $ yarn add puzzlejs-jigsaw
 Then add this to your site:
 
 ```js
+import $ from 'jquery';
 import jigsaw from 'puzzlejs-jigsaw';
 
 jigsaw.init(
-  '#jigsaw',
+  $('#jigsaw'),
   /**
    * callback when puzzle passed
    */
@@ -30,9 +31,10 @@ jigsaw.init(
   /**
    * callback when puzzle not passed
    */
-  function rejected () {
+  function rejected() {
     // TODO: implement or delete this
-  });
+  }
+);
 ```
 
 ## License
